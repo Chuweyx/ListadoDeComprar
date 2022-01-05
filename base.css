@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+ 
+
+
+body {
+	color: #000;
+	background: #332F29;
+	font-size:97%;
+	margin: 0;
+	}
+
+#contenedor {
+	width: 800px;
+	background: #8FA68E;
+	margin-right:auto;
+	margin-left:auto;
+	overflow: hidden;
+}
+nav {
+	background: #CC3910;
+	float: left;
+	width: 160px;
+}
+ul {
+	list-style-type:none;
+}
+a {
+	color:#F1F2C0;
+	text-decoration: none;
+}
+section {
+	background: #F1F2C0;
+	float: left;
+	/*margin: 0 0 0 25px;*/
+	width: 400px;
+}
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 190px;
+}
+
+@media screen and (max-width: 800px){
+	#contenedor{
+		width:100%;	
+			
+		}
+	
+	nav{
+		width: 100%;
+		background-color: #facb64;
+		height: 105px;
+		float: none;
+	}
+	section{
+		width: 100%;
+		border-top: 1.9px solid black;
+		border-bottom: 1.9px solid black;
+		font-size: 1em;
+		height: 130px;
+		padding-left: 10px;
+		padding-top: 10px;
+		float: none;		
+	}
+	section h2{
+		font-size: 1.5em;
+		
+	}
+	
+	aside{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		height: 130px;
+		padding-left: 10px;
+		padding-top: 12px;
+		padding-bottom: 20px;
+	}
+	aside h2{
+		font-size: 1.5em;
+	}
+	a{
+		color: #000;
+		line-height: 2em;
+		font-size: 1.1em;
+	}
+	ul{
+		margin: 0;
+	}
+	
+	p{
+		padding-right: 15px;
+		font-size: 1.2em;
+	}
+	h1{
+		font-size: 1.9em;
+		margin-top: 1px;
+	}
+	
+	
+	}
+
+
+
+	
+	
+	

@@ -12,7 +12,7 @@
             height: 200px;
             border: 2px solid black;
             margin: 20px;
-            background: blue;
+            background: rgba(77, 70, 136, 0.5);
             position: absolute;
             left: 250px;
             top: 200px;
@@ -23,8 +23,8 @@
         #cuadrado2 {
             width: 200px;
             height: 200px;
+            background: rgba(54, 120, 212, 0.7);
             border: 2px solid black;
-            background: red;
             margin: 20px;
             left: 550px;
             top: 200px;
@@ -34,7 +34,7 @@
         #cuadrado3 {
             width: 200px;
             height: 200px;
-            background: yellow;
+            background: rgba(210, 70, 124, 0.9);
             border: 2px solid black;
             margin: 20px;
             position: absolute;
@@ -58,7 +58,7 @@
 
 <body>
     <div id="container">
-        <h1>Cuadros Interativos</h1>
+        <h1 id="titulo">Cuadros Interativos</h1>
 
         <div id="cuadrado1" onclick="cuad1()"></div>
         <div id="cuadrado2" onclick="cuad2()"></div>
@@ -68,10 +68,13 @@
     <script>
 
         function cuad1() {
-            document.getElementById("container").style.background="green";
+            document.getElementById("container").style.background= "#2e679e";
+            document.getElementById("titulo").style.color="white";
         }
         function cuad2() {
             document.getElementById("container").style.background = "red";
+            document.getElementById("titulo").style.color="lightblue";
+
         }
         function cuad3() {
             document.getElementById("container").style.background = "yellow";

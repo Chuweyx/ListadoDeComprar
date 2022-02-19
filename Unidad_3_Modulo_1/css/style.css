@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image:url("../img/84894.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.narvar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+.narvar img{
+    width: 70px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.container{
+    width: 40%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.info{
+    width: 500px;
+    color: rgb(4, 30, 48);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu img{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 80px;
+}
+.info h1{
+    font-size: 45px;
+    margin-left: 20px;
+    letter-spacing: 15px;
+    font-family: bold sans-serif;
+}
+.info p{
+    color: #666368;
+    font-size: 15px;
+    margin: 10px;
+    line-height: 20px;
+}
+.menu ul{
+    display: inline-flex;
+    /* margin: 60px; */
+    margin-left: 800px;
+    margin-top: 30px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(39, 39, 41);
+}
+.active{    
+    color: black !important;
+}
+.fas fa-plane-departure{
+    color: black;
+}
+
+/* INICIO ICONOS SOCIALES */
+
+.social-icons{
+    right: 72px;
+    bottom: 32px;
+    position: absolute;
+    color: #fff ;
+}
+.social-icons ul li{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+.social-icons ul li a{
+    color:rgb(95, 143, 189);
+    border-radius: 50%;
+    border: 1px solid #999;
+    padding: 4px;
+    display: block;
+}
+
+/* FIN DE HOME */
+
+/* INICIO DE GALARY */
+
+#hero1 {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('../img/Radiance_img/peakpx\ \(1\).jpg'); */
+    background-image:url('../maldivas.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container{
+    width: 40%;    
+    height: 100vh;
+    background-color: rgba(86, 86, 86, 0.3);
+}
+.info1{
+    width: 500px;
+    color: rgb(242, 247, 250);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info1 h1{
+    font-size: 45px;
+    margin-left: 20px;
+    letter-spacing: 15px;
+    font-family: bold sans-serif;
+}
+.info1 p{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px 10px 10px 20px;
+    line-height: 20px;
+}
+.slaider{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+#prev, #next{
+    width: 30px;
+    cursor: pointer;
+}
+
+.preview{
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+}
+.preview img{
+    width: 70px ;
+    margin: 0 10px;
+    opacity: 0.4;
+}
+.preview .active{
+    display: block;
+    border: 3px solid #fff;
+    width: 80px;
+    opacity: 1;
+}

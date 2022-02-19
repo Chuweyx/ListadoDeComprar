@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../web_site_prototipo_course/css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Galery</title>
+</head>
+
+<body>
+    <div id="hero1">
+        <div class="narvar">
+            <div class="menu">
+                <ul>
+                    <li class="logo"> <img src="./img/logo sin fondo.png" alt=""></li>
+
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li class="active"><a href="./galery.html">Galery</a></li>
+
+                    <li> <a href="#">News</a></li>
+                    <li> <a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info1">
+                <h1 id="sitio1">MALDIVAS</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eos. Dolores iste error placeat.
+                </P>
+            </div>
+        </div>
+        <div class="slaider">
+            <img src="./img/Radiance_img/left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="./maldivas.jpg" class=" active thumbnail">
+                <img src="./img/Radiance_img/small2.png" class="thumbnail">
+                <img src="./img/Radiance_img/small3.png" class="thumbnail">
+                <img src="./img/Radiance_img/small4.png" class="thumbnail">
+                <img src="./img/Radiance_img/small5.png" class="thumbnail">
+            </div>
+            <img src="./img/Radiance_img/right-arrow.png" id="next">
+
+        </div>
+    </div>
+
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero1 = document.getElementById("hero1");
+
+        var backgroundImg = new Array("maldivas.jpg", "bg2.png", "bg3.png", "bg4.png", "bg5.png",
+
+        );
+
+        let i = 0;
+
+        next.onclick = function () {
+            if (i < 4) {
+                hero1.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+                thumbnail[i + 1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+
+                if (i == 0) {
+                    document.getElementById("sitio1").innerHTML = "MALDIVAS"
+                } else {
+                    if (i == 1) {
+                        document.getElementById("sitio1").innerHTML = "COSTA"
+                    } else {
+                        if (i == 2) {
+                            document.getElementById("sitio1").innerHTML = " AZUL"
+                        } else {
+                            if (i == 3) {
+                                document.getElementById("sitio1").innerHTML = "FRANCIA"
+                            } else {
+                                if (i == 4) {
+                                    document.getElementById("sitio1").innerHTML = "BELGICA"
+
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+        prev.onclick = function () {
+            if (i > 0) {
+                hero1.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
+                thumbnail[i - 1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+
+                if (i == 0) {
+                    document.getElementById("sitio1").innerHTML = "MALDIVAS"
+                } else {
+                    if (i == 1) {
+                        document.getElementById("sitio1").innerHTML = "COSTA"
+                    } else {
+                        if (i == 2) {
+                            document.getElementById("sitio1").innerHTML = " AZUL"
+                        } else {
+                            if (i == 3) {
+                                document.getElementById("sitio1").innerHTML = "FRANCIA"
+                            } else {
+                                if (i == 4) {
+                                    document.getElementById("sitio1").innerHTML = "BELGICA"
+
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

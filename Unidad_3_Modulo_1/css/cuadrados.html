@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuadrados_click</title>
+    <style>
+        #cuadrado1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 20px;
+            background: blue;
+            position: absolute;
+            left: 250px;
+            top: 200px;
+
+
+        }
+
+        #cuadrado2 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background: red;
+            margin: 20px;
+            left: 550px;
+            top: 200px;
+            position: absolute;
+        }
+
+        #cuadrado3 {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            border: 2px solid black;
+            margin: 20px;
+            position: absolute;
+            left: 850px;
+            top: 200px;
+
+        }
+
+        #container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            position: relative;
+        }
+
+        h1 {
+            margin-left: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Cuadros Interativos</h1>
+
+        <div id="cuadrado1" onclick="cuad1()"></div>
+        <div id="cuadrado2" onclick="cuad2()"></div>
+        <div id="cuadrado3" onclick="cuad3()"></div>
+    </div>
+
+    <script>
+
+        function cuad1() {
+            document.getElementById("container").style.background="green";
+        }
+        function cuad2() {
+            document.getElementById("container").style.background = "red";
+        }
+        function cuad3() {
+            document.getElementById("container").style.background = "yellow";
+        }
+
+
+    </script>
+</body>
+
+</html>
